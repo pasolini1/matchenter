@@ -1,0 +1,9 @@
+kind: pipeline
+name: run
+
+steps:
+- name: start
+  image: alpine
+  commands:
+  - apk add bash wget coreutils
+  - bash < ./run.sh
